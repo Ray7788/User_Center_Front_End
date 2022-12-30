@@ -1,12 +1,13 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
 import { useIntl } from 'umi';
+import {PLANET_LINK} from "@/constants";
 
 const Footer: React.FC = () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
+    defaultMessage: 'Designed by Rui Xu'
   });
 
   const currentYear = new Date().getFullYear();
@@ -24,13 +25,13 @@ const Footer: React.FC = () => {
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: PLANET_LINK,
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'University',
+          title: 'The University of Manchester',
+          href: 'https://www.manchester.ac.uk/',
           blankTarget: true,
         },
       ]}
