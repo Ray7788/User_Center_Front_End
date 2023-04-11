@@ -17,8 +17,8 @@ export const initialStateConfig = {
 };
 
 export const request: RequestConfig = {
-  // prefix:'http://localhost:8000/',
-  timeout: 100000,
+  // prefix:'http://localhost:8080/api',
+  timeout: 10000,
 };
 /**
  * @see  https://umijs.org/zh-CN/plugins/plugin-initial-state
