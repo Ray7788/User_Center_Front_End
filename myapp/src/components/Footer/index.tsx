@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: 'Designed by Rui Xu'
+    defaultMessage: '许瑞出品'
   });
 
   const currentYear = new Date().getFullYear();
@@ -29,9 +29,9 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'University',
-          title: 'The University of Manchester',
-          href: 'https://www.manchester.ac.uk/',
+          key: 'wait',
+          title: 'Waiting for you',
+          href: 'https://ray7788.github.io/',
           blankTarget: true,
         },
       ]}
