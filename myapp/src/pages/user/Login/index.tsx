@@ -17,9 +17,10 @@ import {
 } from '@ant-design/pro-components';
 import { Alert, message, Tabs } from 'antd';
 import React, { useState } from 'react';
-import { FormattedMessage, history, SelectLang, useIntl, useModel } from 'umi';
+import {FormattedMessage, history, SelectLang, useIntl, useModel} from 'umi';
 import styles from './index.less';
 import {PLANET_LINK, SYSTEM_LOGO} from "@/constants";
+import {Link} from "@umijs/preset-dumi/lib/theme";
 
 const LoginMessage: React.FC<{
   content: string;
@@ -279,7 +280,8 @@ const Login: React.FC = () => {
             <ProFormCheckbox noStyle name="autoLogin">
               <FormattedMessage id="pages.login.rememberMe" defaultMessage="自动登录" />
             </ProFormCheckbox>
-            <a
+            <Link to="/user/register">新用户注册</Link>
+              <a
               style={{
                 float: 'right',
               }}
