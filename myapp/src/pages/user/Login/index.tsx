@@ -1,23 +1,11 @@
 import Footer from '@/components/Footer';
-import { login } from '@/services/ant-design-pro/api';
+import {login} from '@/services/ant-design-pro/api';
 // import { getFakeCaptcha } from '@/services/ant-design-pro/login';
-import {
-  // AlipayCircleOutlined,
-  LockOutlined,
-  // MobileOutlined,
-  // TaobaoCircleOutlined,
-  UserOutlined,
-  // WeiboCircleOutlined,
-} from '@ant-design/icons';
-import {
-  LoginForm,
-  // ProFormCaptcha,
-  ProFormCheckbox,
-  ProFormText,
-} from '@ant-design/pro-components';
-import { Alert, message, Tabs } from 'antd';
-import React, { useState } from 'react';
-import {FormattedMessage, history, SelectLang, useIntl, useModel} from 'umi';
+import {LockOutlined, UserOutlined,} from '@ant-design/icons';
+import {LoginForm, ProFormCheckbox, ProFormText,} from '@ant-design/pro-components';
+import {Alert, message, Tabs} from 'antd';
+import React, {useState} from 'react';
+import {FormattedMessage, history,  SelectLang, useIntl, useModel} from 'umi';
 import styles from './index.less';
 import {PLANET_LINK, SYSTEM_LOGO} from "@/constants";
 import {Link} from "@umijs/preset-dumi/lib/theme";
